@@ -86,7 +86,7 @@ public class ToDoDaoImpl implements ToDoDao {
             //Connection conn = DriverManager.getConnection(url, username, password);
 
             //sql that we will be executing
-            String sql = "SELECT * FROM todos;";
+            String sql = "SELECT * FROM todos ORDER BY id DESC;";
             PreparedStatement ps = conn.prepareStatement(sql);
 
             //execute the sql statement and return the result set
